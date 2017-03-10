@@ -1,0 +1,192 @@
+{% extends data.outerLayout %}
+
+
+{% block main %} 
+    <header>
+       <div id="header-icon">
+           <div class="burger"></div>
+           <div class="burger"></div>
+           <div class="burger"></div>
+       </div>
+        <h1><modules/my-apostrophe-assets/img src="../modules/my-apostrophe-assets/img/logo_silver_act.png" alt="Silver Act Logo" ></h1>
+        <h1><modules/my-apostrophe-assets/img src="../modules/my-apostrophe-assets/img/logo_tablette.png" alt="Silver Act Logo"></h1>
+        <nav>
+            <ul class="center-col">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assets/html/qui-sommes-nous.html">Qui sommes nous ?</a></li>
+                <li><a href="assets/html/comment-ca-marche.html">Comment ça marche ?</a></li>
+                <li><a href="">Nos Activités</a></li>
+                <li><a href="">Questions fréquentes</a></li>
+                <li><a href="assets/html/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="header-move">
+           <ul>
+               <li><modules/my-apostrophe-assets/img src="assets/modules/my-apostrophe-assets/img/logo_silver_act.png"></li>
+               <li><a href="index.html">Home</a></li>
+                <li><a href="assets/html/qui-sommes-nous.html">Qui sommes nous ?</a></li>
+                <li><a href="#how-it-work">Comment ça marche ?</a></li>
+                <li><a href="#our-activitis">Nos Activités</a></li>
+                <li><a href="">Questions Fréquentes</a></li>
+                <li><a href="">Contact</a></li>
+           </ul>            
+        </nav>
+        <nav id="mobtab-nav">
+            <ul class="center-col">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assets/html/qui-sommes-nous.html">Qui sommes nous ?</a></li>
+                <li><a href="">Comment ça marche ?</a></li>
+                <li><a href="">Nos activités</a></li>
+                <li><a href="">Questions fréquentes</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="block-info">
+            <h2>Contact</h2>
+            <div id="information">
+               <div class="center-col">
+                    <p>Nous contacter par téléphone</p>
+                    <div>
+                        <modules/my-apostrophe-assets/img src="../modules/my-apostrophe-assets/img/phone-ico.png">
+                        <p>07 82 82 41 68</p>
+                    </div>
+                    <p>Ou via le formulaire de contact</p>
+                </div>
+                <div id="red-button">
+                        <p>Nous contacter</p>
+                </div>
+            </div>
+        </section>
+        <section id="user-info" >
+            <div class="quit" id="1">
+                <div></div>
+            </div>
+            <form class="center-col">
+                <div>
+
+                    <div class="form-left">
+                        <label>Votre Nom</label>
+                        <input type="text" name="nom" placeholder="Gacoin">
+                        <label>E-mail</label>
+                        <input type="email" name="email" placeholder="a.gacoin@sfr.fr">
+                    </div>
+                    <div class="form-right">
+                        <label>Prénom</label>
+                        <input type="text" placeholder="Alain">
+                        <label>Téléphone<span>*</span></label>
+                        <input type="tel" placeholder="0636366747">
+                    </div>
+                </div>
+                <div>
+                    <div id="select-subject">                       <div id="row-modules/my-apostrophe-assets/img"></div>
+                            <ul>
+                                <li><p>- Sujet -<p></p></li>
+                                <li><p>Demande de Devis</p></li>
+                                <li><p>Informations</p></li>
+                                <li><p>To Be Seen</p></li>
+                                <li><p>Service Relation Client</p></li>
+                            </ul>
+                    </div>
+                    <div id="message-zone">
+                        <label>Message</label>
+                        <textarea placeholder="Votre message"></textarea>
+                    </div>
+                    <div class="valid-form">
+                        <p>* Champs obligatoires</p>
+                        <p>Envoyer</p>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section id="doc">
+           <div id="yellow-button">
+                <p>Demande de documentation</p>
+            </div>
+            <div id="second-form" class="center-col">
+                <div class="quit" id="2">
+                    <div></div>
+                </div> 
+                <form class="center-col">
+                    <p>Dio et mo voluptius moluptatiis soles provit voluptatur?</p>
+                    <p>Uciur as as vent officim venis illuptat quodi ut re vitaeribus rae optatis et et licitasin esto doluptatis nihit reperibusti con nobit</p>
+                    <div>
+                        <div class="form-left">
+                            <label>Votre Nom<span>*</span></label>
+                            <input type="text" name="nom" placeholder="Gacoin">
+                            <label>E-mail</label>
+                            <input type="email" name="email" placeholder="a.gacoin@sfr.fr">
+                        </div>
+                        <div class="form-right">
+                            <label>Prénom<span>*</span></label>
+                            <input type="text" placeholder="Alain">
+                            <label>Téléphone<span>*</span></label>
+                            <input type="tel" placeholder="0636366747">
+                        </div>
+                    </div>
+                    <div>
+                        <label>Adresse<span>*</span></label>
+                        <input type="text" placeholder="12 rue de la paix">
+                    </div>
+                    <div>
+                        <div>
+                            <label>Ville<span>*</span></label>
+                            <input type="text" placeholder="Antony">
+                        </div>
+                        <div>
+                            <label>Code postal<span>*</span></label>
+                            <input type="tel" placeholder="92160">
+                        </div>
+                    </div>
+                    <div class="valid-form">
+                        <p>* Champs obligatoires</p>
+                        <p>Envoyer</p>
+                    </div>
+                </form>
+            </div>
+            <modules/my-apostrophe-assets/img src="../modules/my-apostrophe-assets/img/contact/map.png">
+            <p>Actuellement, nous sommes disponible et nous déplaçons dans toute l’ile-de-France</p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="center-col footer-content">
+        <div id="logo-social">
+            <modules/my-apostrophe-assets/img src="../modules/my-apostrophe-assets/img/logo_silver_act_footer.png" alt="">
+            <nav id="social">
+                <ul>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="footer-txt">
+           <p>Maute ommodignia non re, oditatu recatquisquo bea nis volut ad minvele stioOluptas aut et, to et aspel experum aut praesequo blabor ma doluptatum, que poribus voluptae num rerciati officil et debis mi, que rerumqui ne nim asinus niam alibusamet volene nonsece ptius, cus, cor repel .</p>
+        </div>
+        <nav id="secondarynav">
+            <ul>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="">Questions Fréquentes</a>
+                </li>
+                <li>
+                    <a href="">Mentions Légales</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+{% endblock %}

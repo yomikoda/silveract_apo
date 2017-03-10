@@ -1,0 +1,413 @@
+/* Header */
+
+header nav>ul>li:nth-child(2)>a:after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    opacity: 0.5;
+    transition: all ease 1s;
+}
+
+/* qui sommes-nous */
+
+#who-we-are {
+    width: 100%;
+    background: white;
+    text-align: center;
+}
+
+#who-we-are h2 {
+    font-family: 'Lobster';
+    font-weight: lighter;
+    font-size: 30px;
+    color: white;
+    background: #F64747;
+    height: 70px;
+    line-height: 65px;
+}
+
+#who-we-are img {
+    width: 100%;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 97px;
+}
+
+#creator {
+    overflow: hidden;
+}
+
+#julie {
+    float: left;
+    width: 47.5%;
+    padding-top: 81px;
+    border-right: dotted 5px #F67E7E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#julie img {
+    width: 278px;
+    height: 278px;
+    border: solid 10px #9CD3D1;
+    border-radius: 50%;
+}
+
+#julie p {
+    font-family: 'Lobster';
+    font-size: 40px;
+    width: 16%;
+    margin-top: 33px;
+    line-height: 25px;
+}
+
+#julie span {
+    font-size: 30px;
+}
+
+#julie-quote-text {
+    margin-top: 35px;
+    display: inline-block;
+}
+
+#julie-quote-text img{
+    width: 30px;
+    height: 21px;
+    border-radius: 0;
+    border: 0px;
+    display: inline-block;
+    transform: rotateX(180deg);
+}
+
+#julie-quote-text img:first-child {
+    margin-bottom: 110px;
+}
+
+#julie-quote-text p {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Lato';
+    width: 291px;
+    display: inline-block;
+    margin: 0 0;
+    line-height: inherit;
+}
+
+#julie-text-blue {
+    width: 366px;
+    height: 191px;
+    background-color: #9CD3D1;
+    margin-top: 71px;
+    margin-bottom: 90px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+#julie-text-blue p {
+    width: 314px;
+    font-family: 'Lato';
+    font-size: 15px;
+    color: white;
+    margin: 0 0;
+    padding: 29px 26px 29px 26px;
+    line-height: inherit;
+}
+
+#emmanuelle {
+    float: left;
+    width: 47.5%;
+    padding-top: 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#emmanuelle img {
+    width: 278px;
+    height: 278px;
+    border: solid 10px #9CD3D1;
+    border-radius: 50%;
+}
+
+#emmanuelle p {
+    font-family: 'Lobster';
+    font-size: 40px;
+    width: 38%;
+    margin: 33px 166px 0 154px;
+    line-height: 25px;
+}
+
+#emmanuelle span {
+    font-size: 30px;
+}
+
+#emmanuelle-quote-text {
+    margin-top: 35px;
+    display: inline-block
+}
+
+#emmanuelle-quote-text img {
+    width: 30px;
+    height: 21px;
+    border-radius: 0;
+    border: 0px;
+    display: inline-block;
+    transform: rotateX(180deg);
+}
+
+#emmanuelle-quote-text img:first-child {
+    margin-bottom: 110px;
+}
+
+#emmanuelle-quote-text p {
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Lato';
+    width: 291px;
+    display: inline-block;
+    margin: 0 0;
+    line-height: inherit;
+}
+
+#emmanuelle-text-blue {
+    width: 366px;
+    height: 191px;
+    background-color: #9CD3D1;
+    margin-top: 71px;
+    margin-bottom: 90px;
+    text-align: left;
+    border-radius: 20px;
+}
+
+#emmanuelle-text-blue p {
+    width: 314px;
+    font-family: 'Lato';
+    font-size: 15px;
+    color: white;
+    margin: 0 0;
+    padding: 29px 26px 29px 26px;
+    line-height: inherit;
+}
+
+#red-text {
+    width: 288px;
+    height: 84px;
+    font-family: 'Lato';
+    font-size: 15px;
+    color: white;
+    padding: 31px 106px 31px 106px;
+    border-radius: 20px;
+    background-color: #F67E7E;
+    text-align: left;
+}
+
+/** human and services spirit **/
+
+#services{
+    background: white;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#services h2{
+    font-family: 'Lobster';
+    font-size: 30px;
+    color: white;
+    background: #F9DA60;
+    height: 70px;
+    line-height: 65px;
+}
+
+#services-bloc{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Futura-med';
+    font-size: 15px;
+    color: #7C7C7B;
+}
+
+#services-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-left: 26px;
+}
+
+#services-text p {
+    width: 368px;
+    word-spacing: 6px;
+    line-height: 20px;
+}
+
+#services-text p:nth-child(2) {
+    margin-bottom: 18px;
+}
+
+        /** in few figures **/
+
+
+#some-figures{
+    background: white;
+    text-align: center;
+    margin-bottom: 80px;
+    color: #7C7C7B;
+}
+
+#some-figures h2{
+    font-family: 'Lobster';
+    font-size: 30px;
+    color: white;
+    background: #E6548C;
+    height: 70px;
+    line-height: 65px;
+}
+
+#seniors-figures{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: 'Futura-Med';
+    font-size: 15px;
+}
+
+#seniors-figures p {
+    width: 630px;
+    word-spacing: 6px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 23px;
+}
+
+#seniors-heart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+}
+
+#seniors-heart p {
+    width: 630px;
+    word-spacing: 6px;
+    line-height: 20px;
+    text-align: left;
+    padding-right: 23px;
+    font-family: 'Futura-Med';
+}
+
+
+        /** Silver Act's philosophy **/ 
+
+#philosophy {
+    background: white;
+    text-align: center;
+    font-family: 'Futura-Med';
+    margin-bottom: 30px;
+}
+
+#philosophy h2 {
+    font-family: 'Lobster';
+    font-size: 30px;
+    color: white;
+    background: #4ECDC4;
+    height: 70px;
+    line-height: 65px;
+}
+
+#paraph{
+    font-family: 'Futura-Med';
+    font-size: 20px;
+    color: #7C7C7B;
+    padding-top: 72px;
+    text-align: left;
+    
+}
+
+#percentage {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    margin-bottom: 80px;
+}
+
+#percentage div {
+    display: flex;
+    padding-bottom: 10px;
+    
+}
+
+#percentage p {
+    justify-content: center;
+    padding-left: 22px;
+    color: #7C7C7B;
+    line-height: 100px;
+}
+
+#solo-silver{
+    padding-bottom: 20px;
+}
+#activities-button-link{
+    width: 230px;
+    height: 50px;
+    background: #4ECDC4;
+    border-radius: 16px;
+    border: none;
+    font-family: 'Futura-Med';
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+    
+
+}
+
+#activities-button-link:hover, #activities-button-link:focus, #activities-button-link:active{
+    background: white;
+    color: #4ECDC4;
+    border: 2px solid #4ECDC4;
+}
+
+#second-silver{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

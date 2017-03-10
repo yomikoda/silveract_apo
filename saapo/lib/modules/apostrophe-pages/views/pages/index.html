@@ -1,0 +1,354 @@
+{% extends data.outerLayout %}
+
+
+{% block main %}
+
+
+<body>
+    <div id="sticky">
+        <div id="phone-ico"></div>
+        <div id="callbacktext">
+            <h3>Me faire rappeler</h3>
+            <p>Laissez votre numéro de téléphone et nous vous rappellerons dans les plus brefs délais !</p>
+        </div>
+        <form>
+            <span>Telephone :</span>
+            <br>
+            <input type="tel" name="usrtel">
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="send">
+            <p>Envoyé</p>
+            <img src="modules/my-apostrophe-assets/img/home/checkmark.png">
+        </div>
+    </div>
+    <header>
+       <div id="header-icon">
+           <div class="burger"></div>
+           <div class="burger"></div>
+           <div class="burger"></div>
+       </div>
+        <h1><img src="modules/my-apostrophe-assets/img/logo_silver_act.png" alt="Silver Act Logo" ></h1>
+        <h1><img src="modules/my-apostrophe-assets/img/logo_tablette.png" alt="Silver Act Logo"></h1>
+        <nav>
+            <ul class="center-col">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/qui-sommes-nous">Qui sommes nous ?</a></li>
+                <li><a href="/comment-ca-marche">Comment ça marche ?</a></li>
+                <li><a href="">Nos Activités</a></li>
+                <li><a href="/questions-fréquantes">Questions fréquentes</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="header-move">
+           <ul>
+               <li><img src="modules/my-apostrophe-assets/img/logo_silver_act.png"></li>
+               <li><a href="index.html">Home</a></li>
+                <li><a href="assets/html/qui-sommes-nous.html">Qui sommes nous ?</a></li>
+                <li><a href="/comment-ca-marche">Comment ça marche ?</a></li>
+                <li><a href="#our-activitis">Nos Activités</a></li>
+                <li><a href="/questions-fréquantes">Questions Fréquentes</a></li>
+                <li><a href="/contact">Contact</a></li>
+           </ul>            
+        </nav>
+        <nav id="mobtab-nav">
+            <ul class="center-col">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="assets/html/qui-sommes-nous.html">Qui sommes nous ?</a></li>
+                <li><a href="/comment-ca-marche">Comment ça marche ?</a></li>
+                <li><a href="">Nos activités</a></li>
+                <li><a href="/questions-fréquantes">Questions fréquentes</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="swiper1" class="swiper-container">
+            <div class="swiper-wrapper">
+                <img alt="senior" src="modules/my-apostrophe-assets/img/Senior.jpg" class="swiper-slide">
+                <img alt="Sport" src="modules/my-apostrophe-assets/img/sport.jpg" class="swiper-slide">
+                <img alt="elder" src="modules/my-apostrophe-assets/img/elder.jpg" class="swiper-slide"> 
+            </div>
+            
+        <!-- Ajouter Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Ajouter Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>   
+        </section>
+        
+        <section id="our-activitis">
+            <div id="pink-block" class="center-col">
+                <div id="pink-left">
+                    <h3>Nos activités</h3>
+                    <ul>
+                        <li>
+                            <img src="modules/my-apostrophe-assets/img/home/round-icon-art.png"><p>Verum ut ut am ra cor re cuptatus dolupiet mi.</p>
+                        </li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/round-icon-brain.png"><p>Verum ut ut am ra cor re cuptatus dolupiet mi, aute.</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/round-icon-heart.png"><p>Ut ut am ra cor re cuptatus dolupiet mi, aute ommodignia.</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/round-icon-lotus.png"><p>Mverum ut ut am ra cor re cuptatus dolupiet mi, aute ommodignia non re, oditatu recat.</p></li>
+                    </ul>
+                    <a href="assets/html/" id="pink-button">En savoir plus</a>
+                </div>
+                <img src="modules/my-apostrophe-assets/img/home/illustration_02.png">
+            </div>
+        </section>
+        
+        <section id="how-it-work">
+            <div id="green-block" class="center-col">
+                 {{ apos.singleton(data.page, 'heroPic', 'apostrophe-images', {
+    minSize: [ 700, 350 ],
+    aspectRatio: [ 2, 1 ],
+    limit: 1,
+    size: 'full'
+  }) }}
+                <img src="modules/my-apostrophe-assets/img/home/illustration_01.png">
+                <div id="green-right">
+                    {{ apos.singleton(data.page, 'textBlock', 'apostrophe-rich-text', {
+    toolbar: [ 'Styles', 'Bold', 'Italic' ],
+    styles: [
+      { name: 'Title', element: 'h3' }
+    ]
+  }) }}
+                    {{ apos.singleton(data.page, 'textBlock', 'apostrophe-rich-text', {
+    toolbar: [ 'Styles', 'Bold', 'Italic' ],
+    styles: [
+      
+      { name: 'Meta', element: 'p' }
+    ]
+  }) }}
+                    <p>natem dolupti stiunt re quam repudit ut quisquo bea nis volut ad minvele stionse quibus quibea consequi voluptaerrum autas et volora volorum, serum rem escient. Sedi te nis sitatur mod ma veni volupici blandae cepero consequi iliquas expliquatur, et, aut fugitas quam nullent.</p>
+                    <a href="/comment-ca-marche" id="green-button">En savoir plus</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="our-profit">
+            <div class="center-col">
+                <h3>Nos Bénéfices</h3>
+
+                <div id="profits">
+                    <ul>
+                        <div id="fisrt-data">77%</div>
+                        <li><p>77% des seniors ipsum dolor sit amet, consectetur adipiscing elit</p></li>
+                    </ul>
+
+                    <ul>
+                        <div id="second-data">83%</div>
+                        <li><p>83% des seniors ipsum dolor sit amet, consectetur adipiscing elit</p></li>
+                    </ul>
+
+                    <ul>
+                        <div id="third-data">62%</div>
+                        <li><p>62% des seniors ipsum dolor sit amet, consectetur adipiscing elit</p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="swiper2" class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Emilie</h4></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="stars">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Sarah</h4></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="second-stars">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Jean</h4></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="third-stars">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Emilie</h4></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="stars">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Sarah</h4></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="second-stars">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Jean</h4></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="third-stars">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Emilie</h4></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="stars">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Sarah</h4></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="second-stars">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-slide">
+                    <ul>
+                        <li><h4>Jean</h4></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-01.png"> </li>
+                        <li class="align"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p></li>
+                        <li><img src="modules/my-apostrophe-assets/img/home/quote-02.png"> </li>
+                        <li>
+                            <div id="third-stars">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-full.png">
+                                <img alt="star" src="modules/my-apostrophe-assets/img/home/star-null.png">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Ajouter Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div> 
+        </section>
+    </main>
+    
+    <footer>
+       <div class="center-col footer-content">
+        <div id="logo-social">
+            <img src="modules/my-apostrophe-assets/img/logo_silver_act_footer.png" alt="">
+            <nav id="social">
+                <ul>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="footer-txt"><p>Maute ommodignia non re, oditatu recatquisquo bea nis volut ad minvele stioOluptas aut et, to et aspel experum aut praesequo blabor ma doluptatum, que poribus voluptae num rerciati officil et debis mi, que rerumqui ne nim asinus niam alibusamet volene nonsece ptius, cus, cor repel .</p></div>
+        <nav id="secondarynav">
+            <ul>
+                <li>
+                    <a href="assets/html/contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="assets/html/questions-fr%C3%A9quentes.html">Questions Fréquentes</a>
+                </li>
+                <li>
+                    <a href="">Mentions Légales</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </footer>
+    
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+   
+
+{% endblock %}
